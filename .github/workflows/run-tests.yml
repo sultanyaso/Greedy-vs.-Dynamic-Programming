@@ -1,0 +1,29 @@
+name: Run C++ Code
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up C++ environment
+        run: |
+          sudo apt-get update
+          sudo apt-get install g++ -y
+
+      - name: Compile and run C++ code
+        run: |
+         g++ -o problem1 problem1.cpp
+         ./problem1
+         g++ -o problem2 problem2.cpp
+         ./problem2
