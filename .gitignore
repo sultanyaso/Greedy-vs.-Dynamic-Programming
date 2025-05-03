@@ -1,0 +1,36 @@
+# Compiled object files and executables
+*.o
+*.obj
+*.exe
+*.out
+*.dll
+*.lib
+
+# C++ build folders (CMake, Make, etc.)
+build/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+# VS Code specific
+.vscode/
+
+# System files
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+ehthumbs.db
+Icon?
+*.bak
+*.tmp
+
+# Other temp files
+*.swp
+*.swo
+*.swn
